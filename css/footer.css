@@ -1,0 +1,36 @@
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contacts-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container using auto margins */
+}
+
+.contacts-content div {
+    flex: 1; /* Allow each div to take equal space */
+    text-align: center;
+}
+
+.contacts-content p {
+    margin: 0; /* Remove default margin on paragraphs for better alignment */
+}
+
+.contact-form {
+    margin-left: 45px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 25px;
+}

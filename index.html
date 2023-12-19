@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/dark-page.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="/src/js/dark-mode.js" type="module"></script>
     <script src="/src/js/mobile-friendly.js" type="module"></script>
+    <script src="/src/js/nav-route.js" type="module"></script>
     <title>HostHub101</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <!-- Your logo image or text goes here -->
             <a href="http://127.0.0.1:5500/"><img id="logo" src="/src/images/logo.png" alt="Logo"></a>
         </div>
 
         <button class="mobile-menu-button">Menu</button>
         <nav>
             <ul>
-                <li><a href="#services">Service</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#questions">Questions</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <!-- Add a light bulb and when darken add a moon -->
                     <div class="switch-container">
                         <img class="light-bulb" src="/src/images/light-bulb.webp" alt="Lightbulb" class="lightbulb-img">
                         <span id="darkText" class="mode-label" style="color: white;">Dark</span>
@@ -38,7 +38,7 @@
                             <span class="slider"></span>
                         </label>
                         <span id="lightText" class="mode-label" style="color: white;">Light</span>
-                        <img class="half-moon" src="/src/images//moon.png" alt="Moon" class="moon-img">
+                        <img class="half-moon" src="/src/images/image1.png" alt="Moon" class="moon-img">
                     </div>
                 </li>
             </ul>
@@ -63,6 +63,49 @@
             </div>
         </div>
     </main>
+
+    <footer id="contact">
+        <div>
+            <div class="contacts">
+                <h4>Contacts</h4>
+            </div>
+    
+            <div class="contacts-content">
+                <div>
+                    <p>Location: Sofia, Bulgaria 1000</p>
+                </div>
+    
+                <div>
+                    <p>Phone: +359 98 876 6884</p>
+                </div>
+    
+                <div>
+                    <p>Email: <span><strong>test123@abv.bg</strong></span></p>
+                </div>
+    
+                <div class="contact-form">
+                    <!-- Corrected class name -->
+                    <h4>Contact Us</h4>
+                    <form id="contactForm" action="#" method="post">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+    
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+    
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+        <div class="copyright">
+            <p>Copyright © HostHub101 2023</p>
+        </div>
+    </footer>
 </body>
 
 </html>

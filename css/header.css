@@ -60,6 +60,10 @@ body {
     padding-top: 70px;
 }
 
+.half-moon {
+    width: 100px;
+}
+
 .logo a {
     text-decoration: none;
     color: white;
