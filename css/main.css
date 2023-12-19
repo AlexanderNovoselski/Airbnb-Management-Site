@@ -3,18 +3,25 @@
 }
 
 .main-text {
-    padding-top: 80px;
+    padding-top: 45px;
     color: rgb(18, 147, 140);
     font-family: Rubik;
 }
 
 .lines-img {
-    padding-top: 45px;
+    padding-top: 10px;
     width: 75px;
     height: 75px;
 }
 
 .site-img-style {
-    padding-top: 65px;
     border-radius: 3px;
+    width: 90%; /* Make the image take the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its natural size */
 }
+
+.site-img-holder {
+    max-width: 65%;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
