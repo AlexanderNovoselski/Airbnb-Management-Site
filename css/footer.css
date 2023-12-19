@@ -4,33 +4,74 @@ footer {
     padding: 15px;
 }
 
-.contact {
+.contacts {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .contacts-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 600px; /* Set a maximum width for the container */
-    margin: 0 auto; /* Center the container using auto margins */
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contacts-content div {
-    flex: 1; /* Allow each div to take equal space */
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.contacts-content p {
-    margin: 0; /* Remove default margin on paragraphs for better alignment */
-}
 
 .contact-form {
-    margin-left: 45px;
+    text-align: center;
+    margin-top: 20px;
 }
 
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contactForm h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    #contactForm {
+        max-width: 100%;
+    }
+}
+
+
 .copyright {
-    text-align: center;
-    margin-top: 25px;
+    text-align: left;
+    margin-top: 15px;
 }

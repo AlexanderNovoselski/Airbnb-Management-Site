@@ -9,7 +9,7 @@ header {
     width: 100%;
     height: 70px;
     top: 0;
-    z-index: 1000; /* Ensure the header is above other content */
+    z-index: 1000;
   }
 
 body {
@@ -27,8 +27,8 @@ body {
     width: 50px;
     height: 24px;
     margin-right: 10px;
-    border-radius: 12px; /* You can adjust the value to change the roundness */
-    overflow: hidden; /* Ensure the border-radius is applied to the slider */
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 
@@ -48,7 +48,7 @@ body {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-    border-radius: 12px; /* Make the slider round */
+    border-radius: 12px;
 }
 
 .slider:before {
@@ -81,18 +81,18 @@ input:checked+.slider:before {
   margin-right: 10px;
   font-size: 14px;
   color: #777;
-  opacity: 1; /* Initially set opacity to 1 */
-  transition: opacity 0.4s; /* Add transition for opacity change */
+  opacity: 1;
+  transition: opacity 0.4s;
 }
 
 .dark-mode .mode-label {
   color: white;
-  opacity: 0; /* Initially set opacity to 0 */
+  opacity: 0;
 }
 
 .dark-mode {
-    background-color: #201e1e; /* Set your preferred dark background color */
-    color: white; /* Set your preferred text color for dark mode */
+    background-color: #201e1e;
+    color: white;
 }
 
 .half-moon {

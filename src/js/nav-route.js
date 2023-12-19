@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 targetElement.scrollIntoView({
                     behavior: 'smooth'
                 });
+
+                // Update the URL
+                history.pushState({}, '', `#${targetId}`);
             } else {
                 console.error(`Element with ID '${targetId}' not found.`);
             }

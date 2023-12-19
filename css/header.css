@@ -4,8 +4,8 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-header {
-    background-color: #333;
+header {    background-color: #333;
+
     color: white;
     padding: 10px;
     display: flex;
@@ -34,7 +34,7 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px; /* Adjust margin for better spacing on smaller screens */
+    margin-right: 20px;
 }
 
 nav li:nth-last-child(2) {
@@ -68,9 +68,9 @@ body {
     text-decoration: none;
     color: white;
 }
-/* Add styles for the mobile menu button */
+
 .mobile-menu-button {
-    display: none; /* Initially hide the button on larger screens */
+    display: none;
 }
 
 .logo {
@@ -79,13 +79,13 @@ body {
 }
 
 .logo img {
-    max-height: 100px; /* Adjust as needed */
+    max-height: 100px;
 }
-/* Media query for smaller screens */
+
 @media only screen and (max-width: 768px) {
 
     .mobile-menu-button {
-        display: block; /* Display the button on smaller screens */
+        display: block;
         background: none;
         border: none;
         cursor: pointer;
@@ -93,12 +93,10 @@ body {
         font-size: 16px;
     }
 
-    /* Hide the navigation by default on smaller screens */
     nav ul {
         display: none;
     }
 
-    /* Show the navigation when the show class is present */
     nav ul.show {
         display: flex;
         flex-direction: column;
