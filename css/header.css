@@ -21,6 +21,11 @@ header {
     height: 40px;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -29,9 +34,8 @@ nav ul {
 }
 
 nav li {
-    margin-right: 45px;
+    margin-right: 20px; /* Adjust margin for better spacing on smaller screens */
 }
-
 
 nav a {
     text-decoration: none;
@@ -51,4 +55,42 @@ body {
 .logo a {
     text-decoration: none;
     color: white;
+}
+/* Add styles for the mobile menu button */
+.mobile-menu-button {
+    display: none; /* Initially hide the button on larger screens */
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+
+    .mobile-menu-button {
+        display: block; /* Display the button on smaller screens */
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 16px;
+    }
+
+    /* Hide the navigation by default on smaller screens */
+    nav ul {
+        display: none;
+    }
+
+    /* Show the navigation when the show class is present */
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
 }
