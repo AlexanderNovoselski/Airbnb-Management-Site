@@ -21,44 +21,37 @@
 
 .site-img-style {
     border-radius: 3px;
-    width: 90%; /* Make the image take the full width of its container */
-    max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+    width: 90%;
+    max-width: 100%;
 }
 
 .site-img-holder {
     max-width: 65%;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto;
 }
 
 .benefits-info {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
     justify-content: space-around;
     margin-top: 20px;
-    margin-bottom: 50px; /* Adjust as needed */
+    margin-bottom: 50px;
 }
 
 .benefits-info div {
     text-align: center;
-    width: 30%;
+    width: 70%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Add space between items */
 }
 
-.time {
-    background-color: rgb(176, 176, 176);
-    height: 200px;
-}
-
-.responsability {
-    background-color: rgb(132, 201, 190);
-    height: 200px;
-}
-
+.time,
+.responsability,
 .income {
-    background-color: rgb(176, 176, 176);
-    height: 200px;
+    height: 150px; /* Adjusted height for smaller screens */
 }
 
 .benefits-info div h4 {
-    text-align:  center;
+    text-align: center;
     font-size: 15px;
     font-family: Rubik;
 }
@@ -72,19 +65,26 @@
     text-align: center;
     align-items: center;
     align-content: center;
-    max-width: 100%; /* Set the maximum width to 100% */
+    max-width: 100%;
 }
+
 .benefit {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-height: 250px; /* Adjust the max-height as needed */
+    max-height: 200px; /* Adjusted max height for smaller screens */
     overflow: hidden;
-    height: 300px;
 }
 
 .benefit-description p {
     word-wrap: break-word;
-    max-width: 100%; /* Ensure the paragraph doesn't exceed the width of its container */
+    max-width: 100%;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .benefits-info div {
+        width: 100%; /* Full width for each item on smaller screens */
+    }
 }
