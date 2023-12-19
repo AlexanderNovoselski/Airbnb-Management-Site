@@ -37,6 +37,14 @@ nav li {
     margin-right: 20px; /* Adjust margin for better spacing on smaller screens */
 }
 
+nav li:nth-last-child(2) {
+    margin-right: 55px;
+}
+
+nav li:last-child {
+    margin-right: 35px;
+}
+
 nav a {
     text-decoration: none;
     color: white;
