@@ -1,0 +1,15 @@
+.mainElement {
+    text-align: center;
+}
+
+.main-text {
+    padding-top: 80px;
+    color: rgb(18, 147, 140);
+    font-family: Rubik;
+}
+
+.lines-img {
+    padding-top: 45px;
+    width: 75px;
+    height: 75px;
+}
