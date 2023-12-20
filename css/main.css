@@ -44,11 +44,7 @@
     margin-bottom: 20px; /* Add space between items */
 }
 
-.time,
-.responsability,
-.income {
-    height: 150px; /* Adjusted height for smaller screens */
-}
+
 
 .benefits-info div h4 {
     text-align: center;
@@ -88,3 +84,31 @@
         width: 100%; /* Full width for each item on smaller screens */
     }
 }
+
+
+
+.time,
+.responsability,
+.income {
+    height: 150px; /* Adjusted height for smaller screens */
+    transition: 0.7s;
+}
+
+.benefit h4 {
+    color: rgb(18, 147, 140);
+    transition: 0.7s;
+}
+
+.time:hover,
+.responsability:hover,
+.income:hover{
+    background-color: rgb(27, 185, 177);;
+    color: white;
+}
+
+.time:hover h4,
+.responsability:hover h4,
+.income:hover h4 {
+    color: white;
+}
+
