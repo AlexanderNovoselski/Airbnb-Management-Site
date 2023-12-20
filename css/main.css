@@ -34,27 +34,27 @@
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
     justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 45px;
 }
 
 .benefits-info div {
     text-align: center;
-    width: 70%; /* Full width on smaller screens */
+    width: 67%; /* Full width on smaller screens */
     margin-bottom: 20px; /* Add space between items */
 }
 
 
-
 .benefits-info div h4 {
     text-align: center;
-    font-size: 15px;
+    font-size: 19px;
     font-family: Rubik;
 }
 
 .benefits-info div.benefit {
     border: solid 2px rgb(232, 196, 104);
-    border-radius: 25px;
+    font-size: 17px;
+    border-radius: 35px;
 }
 
 .benefit-description {
@@ -84,8 +84,6 @@
         width: 100%; /* Full width for each item on smaller screens */
     }
 }
-
-
 
 .time,
 .responsability,

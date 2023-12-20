@@ -1,0 +1,79 @@
+.services-holder {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #e1e1e1;
+    font-family: Rubik;
+    text-align: center;
+}
+
+.services-holder h2 {
+    margin-bottom: 30px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: rgb(18, 147, 140);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(216, 213, 213);
+    width: 82%;
+    padding: 22px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.first-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.first-row div {
+    flex: 0 0 calc(33.33% - 50px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.first-row p {
+    max-width: 100%; /* Set your desired max-width for the paragraphs */
+}
+
+.border-div {
+    border-bottom: solid 1px black;
+    margin-bottom: 15px;
+}
+
+.second-row,
+.third-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.second-row div,
+.third-row div {
+    width: calc(33.33% - 50px);
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+
+.second-row p,
+.third-row p {
+    max-width: 100%; /* Set your desired max-width for the paragraphs */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .first-row div,
+    .second-row div,
+    .third-row div {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
