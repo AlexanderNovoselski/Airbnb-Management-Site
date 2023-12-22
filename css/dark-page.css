@@ -90,6 +90,7 @@ input:checked+.slider:before {
   opacity: 0;
 }
 
+
 .dark-mode {
     background-color: #201e1e;
     color: white;

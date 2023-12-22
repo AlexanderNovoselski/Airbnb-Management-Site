@@ -4,6 +4,7 @@
     background-color: #e1e1e1;
     font-family: Rubik;
     text-align: center;
+    transition: background-color 0.4s;
 }
 
 .services-holder h2 {
