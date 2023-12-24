@@ -10,7 +10,7 @@ darkModeToggle.addEventListener('change', () => {
   updateImages();
   updateHouseImageSrc();
   const servicesHolder = document.querySelector('.services-holder');
-  servicesHolder.style.backgroundColor = darkModeToggle.checked ? '#201e1e' : ''; // Set the background color for dark mode
+  servicesHolder.style.backgroundColor = darkModeToggle.checked ? '#201e1e' : '';
 });
 
 function updateImages() {

@@ -1,0 +1,25 @@
+.pricing-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+    text-align: center;
+}
+
+.outer-package {
+    border: solid 1px black;
+}
+
+.packeges {
+    margin-right: 25px;
+    width: 270px;
+    height: 190px;
+    border: solid 1px black;
+    box-shadow: 3px 3px 6px 2.5px black;
+    transition: 1s;
+}
+
+.packeges:hover {
+    box-shadow: 6px 6px 6px 4px rgb(188, 186, 186);
+}
