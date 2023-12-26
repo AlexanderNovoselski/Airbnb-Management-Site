@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main-service.css">
     <link rel="stylesheet" href="css/price.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+
     <script src="/src/js/dark-mode.js" type="module"></script>
+    <script src="/src/js/slider.js" type="module"></script>
     <script src="/src/js/mobile-friendly.js" type="module"></script>
     <script src="/src/js/nav-route.js" type="module"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>superhostinghub</title>
 </head>
 
@@ -161,25 +167,88 @@
                     </div>
                 </div>
 
-                <div class="border-div"></div>
+                <div id="pricing" class="border-div"></div>
             </div>
         </div>
 
         <div class="pricing-holder">
-            <div class="package-one packeges">
-                <p>da</p>
+            <div class="package-one packeges outer-package">
+                <h2>Package 1</h2>
+                <p>Lorem ipsum etc</p>
+                <div class="divider"></div>
+                <p class="price">$100</p>
+                <div class="divider"></div>
+                <div class="additional-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Additional information about Package 1.</p>
+                    <p>Additional information about Package 1.</p>
+                </div>
             </div>
 
-            <div class="package-two packeges">
-                <p>ne</p>
+            <div class="package-two packeges outer-package">
+                <h2>Package 2</h2>
+                <p>Full service</p>
+                <div class="divider"></div>
+                <p class="price">$150</p>
+                <div class="divider"></div>
+                <div class="additional-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Additional information about Package 2.</p>
+                    <p>Additional information about Package 2.</p>
+                </div>
             </div>
 
-            <div class="package-three packeges">
-                <p>ne</p>
+            <div class="package-three packeges outer-package">
+                <h2>Package 3</h2>
+                <p>Lorem ipsum</p>
+                <div class="divider"></div>
+                <p class="price">$200</p>
+                <div class="divider"></div>
+                <div class="additional-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Additional information about Package 3.</p>
+                    <p>Additional information about Package 3.</p>
+                </div>
             </div>
-            <div class="package-four packeges">
-                <p>ne</p>
+
+            <div class="package-four packeges outer-package">
+                <h2>Package 4</h2>
+                <p>Lorem ipsum</p>
+                <div class="divider"></div>
+                <p class="price">$250</p>
+                <div class="divider"></div>
+                <div class="additional-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Additional information about Package 4.</p>
+                    <p>Additional information about Package 4.</p>
+                </div>
             </div>
+        </div>
+        
+        <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list">
+                <img class="image-item" src="src/images/advise-man.png" alt="img-1" />
+                <img class="image-item" src="src/images/piggy-bank.png" alt="img-4" />
+                <img class="image-item" src="src/images/advise-man.png" alt="img-4" />
+                <img class="image-item" src="src/images/advise-man.png" alt="img-4" />
+                <img class="image-item" src="src/images/advise-man.png" alt="img-4" />
+                <img class="image-item" src="src/images/advise-man.png" alt="img-5" />
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+
 
     </main>
 

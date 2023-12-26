@@ -1,25 +1,74 @@
+body {
+    background-color: rgb(242, 238, 238);
+    margin: 0;
+    font-family: Rubik, sans-serif;
+}
+
+.dark-mode {
+    background-color: #201e1e;
+    color: white;
+}
+
 .pricing-holder {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 75px;
-    text-align: center;
+    margin: 10px;
+    margin-bottom: 90px;
 }
 
 .outer-package {
-    border: solid 1px black;
+    width: 100%;
+    max-width: 270px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 6px 6px 8px rgba(0, 0, 255, 0.2);
 }
 
-.packeges {
-    margin-right: 25px;
-    width: 270px;
-    height: 190px;
-    border: solid 1px black;
-    box-shadow: 3px 3px 6px 2.5px black;
-    transition: 1s;
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    margin: 15px 0;
 }
 
-.packeges:hover {
-    box-shadow: 6px 6px 6px 4px rgb(188, 186, 186);
+.additional-info {
+    color: #555;
+}
+
+/* Add styled border inside the outer-package div */
+.divider {
+    border-bottom: 2px solid #3498db;
+    margin: 15px 0;
+}
+
+/* Hover effect for outer-package */
+.outer-package:hover {
+    transform: scale(1.05);
+    opacity: 80%;
+    background-color: #8bccf7;
+    box-shadow: 10px 10px 15px rgba(0, 0, 255, 0.3);
+}
+
+.dark-mode p:not(.price) {
+    color: white;
+}
+
+.dark-mode .outer-package {
+    box-shadow: 10px 10px 65px rgba(0, 0, 255, 0.2);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .pricing-holder {
+        margin: 20px;
+    }
+    .outer-package {
+        max-width: 100%;
+    }
 }
