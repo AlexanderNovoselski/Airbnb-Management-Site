@@ -20,7 +20,7 @@ This project is built with HTML, CSS, and JavaScript. It serves as an informatio
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/airbnb-information-site.git
+   git clone https://github.com/AlexanderNovoselski/Airbnb-Management-Site
 
 
 
