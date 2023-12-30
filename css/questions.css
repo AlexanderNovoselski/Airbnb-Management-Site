@@ -1,0 +1,80 @@
+.faq-container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    transition: 0.7s;
+}
+
+
+.faq-item1,
+.faq-item2,
+.faq-item3 {
+    margin-bottom: 15px;
+}
+.faq-container {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+.dark-mode .faq-container {
+  border: 1px solid rgb(191, 190, 190);
+}
+
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.faq-question:hover {
+    color: #0056b3;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-question.active + .faq-answer {
+    max-height: 500px;
+    display: block;
+}
+
+.faq-answer table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.faq-answer table th, .faq-answer table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.faq-answer table th {
+    background-color: #f2f2f2;
+}
+
+/* Add transition effect for table cells and rows */
+.faq-question.active + .faq-answer table th,
+.faq-question.active + .faq-answer table td {
+    opacity: 1;
+    transform: translateY(0);
+}
