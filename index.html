@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="css/price.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/questions.css">
+    <link rel="stylesheet" href="css/scroll-animation.css">
 
 
+    <script src="/src/js/scroll-animation.js" type="module"></script>
     <script src="/src/js/dark-mode.js" type="module"></script>
     <script src="/src/js/slider.js" type="module"></script>
     <script src="/src/js/mobile-friendly.js" type="module"></script>
@@ -58,23 +60,23 @@
 
     <main>
         <div class="mainElement">
-            <div>
+            <div class="hidden">
                 <h1 class="main-text">Crack the hosting algorithm</h1>
             </div>
-            <div>
+            <div class="hidden">
                 <p>Leave on us to manage and care about your property</p>
             </div>
 
-            <div class="figure-wrapper">
+            <div class="figure-wrapper hidden">
                 <img class="lines-img" src="/src/images/arrows.png" alt="">
             </div>
 
-            <div class="site-img-holder">
+            <div class="site-img-holder hidden">
                 <img id="house-image" class="site-img-style" alt="NoLoad">
             </div>
 
         </div>
-        <div class="benefits-info">
+        <div class="benefits-info hidden">
             <div class="time benefit">
                 <h4>Guaranteed more free time</h4>
                 <div class="benefit-description">
@@ -99,9 +101,9 @@
         </div>
 
         <div class="services-holder">
-            <h2>What we offer?</h2>
+            <h2 class="hidden">What we offer?</h2>
             <div class="services">
-                <div class="first-row">
+                <div class="first-row hidden">
                     <div>
                         <div class="img-holder"><img src="/src/images/advise-man.png" alt="Professional Advises"></div>
                         <h4>Professional advises from proud Airbnb owners from 5+ years</h4>
@@ -123,9 +125,9 @@
                     </div>
                 </div>
 
-                <div class="border-div"></div>
+                <div class="border-div hidden"></div>
 
-                <div class="second-row">
+                <div class="second-row hidden-right">
                     <div>
                         <div class="img-holder"><img src="/src/images/consumer-goods.png" alt="Consumer goods"></div>
                         <h4>We supply with consumer goods</h4>
@@ -147,9 +149,9 @@
                     </div>
                 </div>
 
-                <div class="border-div"></div>
+                <div class="border-div hidden"></div>
 
-                <div class="third-row">
+                <div class="third-row hidden">
                     <div>
                         <div class="img-holder"><img src="/src/images/piggy-bank.png" alt="Optimize"></div>
                         <h4>We optimise prices and crack your profile's algorithm</h4>
@@ -170,11 +172,11 @@
                     </div>
                 </div>
 
-                <div id="pricing" class="border-div"></div>
+                <div id="pricing" class="border-div hidden"></div>
             </div>
         </div>
 
-        <div class="pricing-holder">
+        <div class="pricing-holder hidden">
             <div class="package-one packeges outer-package">
                 <h2>Package 1</h2>
                 <p>Lorem ipsum etc</p>
@@ -228,7 +230,7 @@
             </div>
         </div>
 
-        <div id="about" class="container">
+        <div id="about" class="container hidden">
             <div class="slider-wrapper">
                 <button id="prev-slide" class="slide-button material-symbols-rounded">
                     chevron_left
@@ -258,7 +260,7 @@
             </div>
         </div>
 
-        <div class="who-are-we-container">
+        <div class="who-are-we-container hidden">
             <h2>Who Are We</h2>
             <p>
                 Welcome to our community! We take pride in being the preferred hosts for over 5 years,
@@ -275,7 +277,7 @@
             </p>
         </div>
 
-        <div id="questions" class="faq-container">
+        <div id="questions" class="faq-container hidden">
             <h2>Frequently Asked Questions</h2>
 
             <!-- FAQ Item 1 -->
